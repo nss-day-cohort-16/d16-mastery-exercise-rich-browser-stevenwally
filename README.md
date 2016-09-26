@@ -21,7 +21,7 @@ Each toy will need the following properties.
 
 ## Views
 
-You will need 3 views in this application. Use jQuery to swap the views in and out of an entry point element in `index.html` when the user chooses to visit those sections of your app.
+You will need 3 views in this application. You must use Handebars to create templates for each view. Use jQuery to swap the views in and out of an entry point element in `index.html` when the user chooses to visit those sections of your app. Use Browserify to modularize and compile your JS.
 
 ### List all toys
 
