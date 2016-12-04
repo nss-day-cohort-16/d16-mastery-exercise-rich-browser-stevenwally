@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toy World</title>
+	<link rel='stylesheet' type='text/css' href='/lib/node_modules/bootstrap/dist/css/bootstrap.css'>
+	<link rel='stylesheet' type='text/css' href='styles/styles.css'>
+</head>
+<body>
+	<nav id='nav' class='navbar navbar-default'>
+		<div id='nav-buttons' class="btn-group btn-group-justified" role="group">
+			<div class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <button id='main' type="button" class="btn btn-info">Home</button>
+			</div>
+			<div class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <button id='list' type="button" class="btn btn-info">Toy Box</button>
+			</div>
+			<div class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <button id='add' type="button" class="btn btn-info">Add-a-Toy</button>
+			</div>
+			<div id='signIn' class="btn-group btn-group-lg" role="group" aria-label="...">
+			  <button type="button" class="btn btn-info">Sign In</button>
+			</div>
+			<div id='logOut' class="hidden btn-group btn-group-lg" role="group" aria-label="...">
+			  <button type="button" class="btn btn-info">Log Out</button>
+			</div>
+		</div>
+	</nav>
+	<div class='container'>
+		<div id='mainView'>
+			<div class="jumbotron">
+				<h1 class='text-center'>Welcome to ToyWorld</h1>
+				<p class='text-center'>Your one-stop-shop for trinkets untold!</p>
+			</div>
+		</div>
+		<div id='listView' class='hidden col-md-4'>
+			<div class="page-header">
+  				<h1 class='text-center'>Toy Box</h1>
+			</div>
+
+		</div>
+		<div id='addView' class='hidden col-md-4'>
+			<div class='page-header'>
+				<h1 class='text-center'>Add-a-Toy</h1>
+			</div>
+		</div>
+		<div id='detailView' class='hidden col-md-4'>
+
+		</div>
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src='/lib/node_modules/bootstrap/dist/js/bootstrap.min.js'></script>
+<script src='dist/quiz.js'></script>
+</body>
+</html>
