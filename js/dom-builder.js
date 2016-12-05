@@ -1,14 +1,23 @@
 "use strict";
 
 let template = require('../templates/toys.hbs');
+let detailTemplate = require('../templates/toyDetails.hbs');
 
 function buildList(data) {
-	// $(data).each( (i) => {
-		// console.log('data[i]', data[i]);
 		for (var prop in data) {
-			$('#listView').append(template(data[prop]));
+			$('#listDiv').append(template(data[prop]));
 		}
-	// });
 }
 
-module.exports = {buildList};
+// function addSingleToy(toyObj) {
+// 	for (var prop in toyObj) {
+// 		$('#listView').append(template(toyObj[prop]));
+// 	}
+// }
+
+function buildDetails(toyData) {
+		console.log(toyData);
+		$('#detailView').html(detailTemplate(toyData));
+}
+
+module.exports = {buildList, buildDetails};

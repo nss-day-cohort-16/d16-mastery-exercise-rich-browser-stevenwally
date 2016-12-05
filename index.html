@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</nav>
-	<div class='container'>
+	<div id='container'>
 		<div id='mainView'>
 			<div class="jumbotron">
 				<h1 class='text-center'>Welcome to ToyWorld</h1>
@@ -35,16 +35,22 @@
 		<div id='listView' class='hidden col-md-4'>
 			<div class="page-header">
   				<h1 class='text-center'>Toy Box</h1>
+  				<input type='text' id='toySearch' class='form-control' placeholder='Search the toy box'>
 			</div>
-
+			<div id='listDiv'>
+			</div>
 		</div>
 		<div id='addView' class='hidden col-md-4'>
 			<div class='page-header'>
 				<h1 class='text-center'>Add-a-Toy</h1>
+				<input type='text' id='addName' class='form-control' placeholder='Toy Name'>
+				<input type='text' id='addImage' class='form-control' placeholder='Image Link'>
+				<input type='text' id='addPrice' class='form-control' placeholder='Price'>
+				<textarea class='form-control' id='addDesc' placeholder='Description'></textarea>
+				<button id='addToy' class='btn btn-info btn-lg'>Add Toy</button>
 			</div>
 		</div>
 		<div id='detailView' class='hidden col-md-4'>
-
 		</div>
 	</div>
 <script
